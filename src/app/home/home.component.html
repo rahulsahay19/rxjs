@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="movies-tab">
+    <h1>Movies List</h1>
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Action">
+            <movies-card-list [movies]="actionMovies"></movies-card-list>
+        </mat-tab>
+        <mat-tab label="Thriller">
+            <movies-card-list [movies]="thrillerMovies"></movies-card-list>
+        </mat-tab>
+        <mat-tab label="Drama">
+            <movies-card-list [movies]="dramaMovies"></movies-card-list>
+        </mat-tab>
+    </mat-tab-group>
+</div>

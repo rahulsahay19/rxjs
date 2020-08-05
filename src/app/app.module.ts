@@ -25,12 +25,16 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
+import { MoviesCardListComponent } from './movies-card-list/movies-card-list.component';
+import { MovieDialogComponent } from './movie-dialog/movie-dialog.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        MoviesCardListComponent,
+        MovieDialogComponent
     ],
     imports: [
         BrowserModule,
@@ -42,6 +46,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter";
         MatCardModule,
         MatTabsModule,
         MatSidenavModule,
+        AppRoutingModule,
         MatListModule,
         MatToolbarModule,
         MatInputModule,
@@ -50,7 +55,6 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter";
         MatSortModule,
         MatProgressSpinnerModule,
         MatDialogModule,
-        AppRoutingModule,
         MatSelectModule,
         MatDatepickerModule,
         MatMomentDateModule,

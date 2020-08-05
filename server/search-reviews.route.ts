@@ -27,6 +27,6 @@ export function searchReviews(req: Request, res: Response) {
     const reviewsPage = reviews.slice(initialPos, initialPos + pageSize);
 
     setTimeout(() => {
-        res.status(200).json({ payload: reviewsPage });
+        res.status(200).json({ data: reviewsPage });
     }, 1000);
 }
