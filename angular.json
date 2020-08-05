@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-material-course": {
+    "rxjs-operators": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -55,18 +55,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-material-course:build"
+            "browserTarget": "rxjs-operators:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-material-course:build:production"
+              "browserTarget": "rxjs-operators:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-material-course:build"
+            "browserTarget": "rxjs-operators:build"
           }
         },
         "test": {
@@ -100,7 +100,7 @@
         }
       }
     },
-    "angular-material-course-e2e": {
+    "rxjs-operators-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -109,7 +109,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular-material-course:serve"
+            "devServerTarget": "rxjs-operators:serve"
           }
         },
         "lint": {
@@ -126,7 +126,7 @@
       }
     }
   },
-  "defaultProject": "angular-material-course",
+  "defaultProject": "rxjs-operators",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss"
