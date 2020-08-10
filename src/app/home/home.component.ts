@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
             this.dramaMovies = movies.filter(movie => movie.genre === 'Drama');
         });
     }
+    //TODO: This implementation will change in next blog
 
     private createObservable(url: string) {
         return Observable.create(obs => {
